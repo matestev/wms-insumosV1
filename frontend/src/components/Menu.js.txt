@@ -1,0 +1,23 @@
+import React from "react";
+import CriarLPN from "./CriarLPN";
+import LPNsCriadas from "./LPNsCriadas";
+
+function Menu() {
+  const [tela, setTela] = React.useState("menu");
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>Olá, Admin!</h2>
+      {tela === "menu" && (
+        <>
+          <button onClick={() => setTela("criar")}>Criação de LPN</button>
+          <button onClick={() => setTela("lpncriadas")}>LPNs Criadas</button>
+        </>
+      )}
+      {tela === "criar" && <CriarLPN />}
+      {tela === "lpncriadas" && <LPNsCriadas />}
+    </div>
+  );
+}
+
+export default Menu;

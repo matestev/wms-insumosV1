@@ -1,0 +1,12 @@
+import React from "react";
+
+function LPNsCriadas() {
+  return (
+    <div>
+      <h2>LPNs Criadas</h2>
+      <p>Aqui você verá as bases de LPNs geradas (em breve completo!).</p>
+    </div>
+  );
+}
+
+export default LPNsCriadas;

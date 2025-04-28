@@ -1,0 +1,12 @@
+import React from "react";
+
+function CriarLPN() {
+  return (
+    <div>
+      <h2>Criar LPN</h2>
+      <p>Aqui você irá criar as etiquetas LPNs (em breve completo!).</p>
+    </div>
+  );
+}
+
+export default CriarLPN;
